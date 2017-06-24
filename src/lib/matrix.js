@@ -8,6 +8,19 @@ function Matrix() {};
 Matrix.prototype = {
 
     /*
+    * 配列を初期化する
+    */
+    initMatrix: function(row, col) {
+        var array = new Array(row);
+        for (var i = 0; i < col; i++) {
+            array[i] = new Array(col).fill(0);
+        }
+
+        return array;
+    },
+
+
+    /*
     * 行数を取得する
     */
     countRow: function(arr) {
@@ -29,11 +42,7 @@ Matrix.prototype = {
     sum: function(arrLeft, arrRight) {
         var rowCount = this.countCol(arrLeft);
         var colCount = this.countRow(arrLeft);
-        // TODO: ここから配列の初期化法を考える
-        var resultArr = [
-            [0, 0],
-            [0, 0]
-        ];
+        var resultArr = this.initMatrix(rowCount, colCount);
 
         for(var i = 0; i < rowCount; i++) {
             for (var j = 0; j < colCount; j++) {
@@ -46,7 +55,7 @@ Matrix.prototype = {
 
 
     /*
-    * 加算
+    * 減算
     */
 
 
