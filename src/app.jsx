@@ -13,7 +13,7 @@ var App = createReactClass({
             [8, 0],
             [1, 8]
         ];
-        console.log(matrix.sum(a, b));
+        console.log(matrix.multiple(a, b));
         return (
             <div className="app">
                 Hello uooooo{this.props.name}
