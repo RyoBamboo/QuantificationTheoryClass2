@@ -1,7 +1,7 @@
 {
   "name": "QuantificationTheoyClass2",
   "version": "1.0.0",
-  "description":"" ,
+  "description": "",
   "devDependencies": {
     "react": "15.6.1",
     "react-dom": "15.6.1",
@@ -11,9 +11,7 @@
     "babelify": "6.4.0",
     "babel-preset-react": "6.24.1",
     "gulp-webserver": "0.9.1"
-
   },
   "repository": "https://github.com/RyoBamboo/QuantificationTheoryClass2",
   "license": "MIT"
-
 }
